@@ -19,14 +19,14 @@ inView(".mangeelementerinview", () => {
   animate(".mangeelementer5", { x: [-2000, 0] }, { duration: 2 });
   animate(".mangeelementer6", { x: [2000, 0] }, { duration: 2 });
 
-  // return () => {
-  //   animate(".mangeelementer1", { x: [-2000, 0] }, { duration: 2 });
-  //   animate(".mangeelementer2", { x: [-1500, 0] }, { duration: 2 });
-  //   animate(".mangeelementer3", { x: [-1000, 0] }, { duration: 2 });
-  //   animate(".mangeelementer4", { x: [-500, 0] }, { duration: 2 });
-  //   animate(".mangeelementer5", { x: [-2000, 0] }, { duration: 2 });
-  //   animate(".mangeelementer6", { x: [2000, 0] }, { duration: 2 });
-  // };
+  return () => {
+    animate(".mangeelementer1", { x: [-2000, 0] }, { duration: 2 });
+    animate(".mangeelementer2", { x: [-1500, 0] }, { duration: 2 });
+    animate(".mangeelementer3", { x: [-1000, 0] }, { duration: 2 });
+    animate(".mangeelementer4", { x: [-500, 0] }, { duration: 2 });
+    animate(".mangeelementer5", { x: [-2000, 0] }, { duration: 2 });
+    animate(".mangeelementer6", { x: [2000, 0] }, { duration: 2 });
+  };
 });
 
 animate("body", { opacity: [0, 1] }, { duration: 4 });
@@ -50,16 +50,6 @@ inView(".box4", () => {
 inView(".box5", () => {
   animate(".box5", { y: [2000, 0] }, { duration: 3 });
 });
-
-// scroll(
-//   animate(".scrollzoom", {
-//     scale: [1.5, 1],
-//   }),
-//   {
-//     target: document.querySelector(".scrollzoom"),
-//     offset: ["0.1 0.1", "1 1"],
-//   }
-// );
 
 scroll(animate(".progress", { strokeDasharray: ["0,1", "1,1"] }));
 
