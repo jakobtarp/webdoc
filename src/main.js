@@ -9,6 +9,10 @@ inView(".tracking-in-expand", () => {
 
 inView(".fotogalleryinview", ({ target }) => {
   animate(target.querySelectorAll("img"), { x: [-2000, 0] }, { duration: 1, delay: stagger(1, { start: 0.25 }) });
+
+  return () => {
+    animate(target.querySelectorAll("img"), { x: [-2000, 0] }, { duration: 1, delay: stagger(1, { start: 0.25 }) });
+  };
 });
 
 inView(".mangeelementerinview", () => {
